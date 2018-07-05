@@ -1,9 +1,7 @@
 <?php
 // Variaveis Globais
-$ldap_server      = getenv("conn");
+$ldap_server      = getenv("server");
 #$ldap_conn      = "172.16.0.52";
-$dominio        = getenv("dom"); /*Nome Netbios do dominio*/
-#$dominio        = "tj.pa.gov.br"; /*Nome Netbios do dominio*/
 
 date_default_timezone_set('America/Belem');
 
