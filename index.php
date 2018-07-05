@@ -1,5 +1,6 @@
 <?php
 
-echo "Teste";
+$passwd = getenv("password");
+echo $passwd;
 
 ?>
