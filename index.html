@@ -1,27 +1,97 @@
 <html>
-        <title>CONSULTA LDAP by NOC </title>
+	<title>CONSULTA LDAP by NOC </title>
 
-        <tr>
-                <td width="109" class="fontconsulta-white">&nbsp;</td>
-                <td colspan="2"><form action="index.php" method="post" class="fontconsulta">
-                                <p class="fontconsulta">                    Login:<br />
-                <input type="text" name="samaccountname" size="30" maxlength="30" value="" />
-                <br />
-                Nome:<br />
-                <input type="text" name="displayname" size="60" maxlength="60" />
-                <br />
-                Descrição:<br />
-                <input type="text" name="description" size="30" maxlength="30" value="" />
-                <br />
-                Lotação:<br />
-                <input type="text" name="physicaldeliveryofficename" size="30" maxlength="30" value="" />
-                <br>
-                <br>
-                <strong>OBS:</strong> A pesquisa permite o uso do caracter coringa " * " entre as palavras.                     </p>
-                <p>
-                <input type="submit" value="Pesquisar" />
-                </p>
-                <p>&nbsp;</p>
-                </form></td>
+<head> 
+	<link rel="icon" href="images/LOGO_TJPA.gif" type="image/x-icon" />
+</head>
+
+<style type="text/css">
+.consultatj {
+	color: #6AB5FF;
+}
+body {
+	background-color: #E4E0D5;
+}
+.fontconsulta {
+	color: #526B4E;
+}
+.fontconsulta {
+	font-family: Andalus, AngsanaUPC;
+	font-style: normal;
+}
+td {
+	color: #FFFFFF;
+}
+.fontconsulta-white {
+	color: #FFF;
+}
+.fontconsulta1 {	color: #526B4E;
+}
+.fontconsulta1 {
+	font-family: Andalus, AngsanaUPC;
+	font-style: normal;
+	font-size: 26px;
+	font-weight: bold;
+}
+.fontconsulta-sub {
+	font-size: 24px;
+}
+.fontconsulta-white .fontconsulta1 .fontconsulta-sub .fontconsulta-sub {
+	font-size: 22px;
+}
+</style>
+
+<body>
+<!--	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/> -->
+
+<div align="center">
+    <table width="733" height="211" border="0">
+    	<tr>
+        	<td colspan="3" bgcolor="#526B4E">&nbsp;</td>
         </tr>
+        <tr>
+        	<td colspan="3" class="fontconsulta-white"><img src="images/Logo.v2.jpg" width="733" height="158"></td>
+        </tr>
+        <tr>
+        	<td colspan="3" bgcolor="#526B4E" class="fontconsulta-white">&nbsp;</td>
+        </tr>
+        <tr>
+        	<td class="fontconsulta-white">&nbsp;</td>
+        	<td width="614" colspan="2"><h2 class="fontconsulta">Consulta Usuários de Rede</h2></td>
+        </tr>
+	<tr>
+        	<!-- <td colspan="3" bgcolor="#526B4E"><p align="center"><em><font color="blue"><b>SERVIÇO SUSPENSO POR DECISÃO SUPERIOR</b><br></td> -->
+	</tr>
+        <tr>
+        	<td width="109" class="fontconsulta-white">&nbsp;</td>
+        	<td colspan="2"><form action="search.php" method="post" class="fontconsulta">
+				<p class="fontconsulta">		    Login:<br />
+            	<input type="text" name="samaccountname" size="30" maxlength="30" value="" />
+            	<br />
+              	Nome:<br />
+              	<input type="text" name="displayname" size="60" maxlength="60" />
+              	<br />
+              	Descrição:<br />
+              	<input type="text" name="description" size="30" maxlength="30" value="" />
+              	<br />
+              	Lotação:<br />
+              	<input type="text" name="physicaldeliveryofficename" size="30" maxlength="30" value="" />
+              	<br>
+              	<br>
+            	<strong>OBS:</strong> A pesquisa permite o uso do caracter coringa " * " entre as palavras.			</p>
+            	<p>
+              	<input type="submit" value="Pesquisar" />
+            	</p>
+            	<p>&nbsp;</p>
+          	</form></td>
+        </tr>
+        <tr>
+        	<td colspan="3" bgcolor="#526B4E"><p align="center"><em><font color="white">Coordenadoria de Suporte Técnico<br>
+          	Serviço de Segurnça e Sistemas Básicos (NOC)</font></em><br>
+          	</p></td>
+        </tr>
+	</table>
+</div>
+<div align="center"></div>
+</body>
 </html>
