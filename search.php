@@ -242,7 +242,7 @@ if (!($desconectado)) {
     	</tr>
         <tr>
                 <td colspan="3" bgcolor="#526B4E"><p align="center"><em><font color="white">Coordenadoria de Suporte Técnico<br>
-                Serviço de Segurança e Sistemas Básicos (NOC)</font></em><br>
+                Serviço de Segurança e Sistemas Básicos (NOC)<br>Powered by Openshift</font></em><br>
           	</p></td>
         </tr>
 	</table>
