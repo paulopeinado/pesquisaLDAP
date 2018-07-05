@@ -1,7 +1,7 @@
 <?php
 // Variaveis Globais
 #$ldap_conn      = getenv($conn);
-$ldap_conn      = "172.16.0.52";
+$ldap_conn      = "ldaps://172.16.0.52:636";
 #$dominio        = getenv($dom); /*Nome Netbios do dominio*/
 $dominio        = "tj.pa.gov.br"; /*Nome Netbios do dominio*/
 
