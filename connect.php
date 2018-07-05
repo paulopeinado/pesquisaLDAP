@@ -1,7 +1,6 @@
 <?php
 // Variaveis Globais
 $ldap_server      = getenv("server");
-#$ldap_conn      = "172.16.0.52";
 
 date_default_timezone_set('America/Belem');
 
@@ -11,7 +10,6 @@ $auth_pass      = getenv("pass");
 
 // Base de pesquisa LDAP do Dominio
 $base_dn = getenv("dn");
-#base_dn = "DC=i,DC=tj,DC=pa,DC=gov,DC=br";
 
 // Conecta no servidor
 $connect = ldap_connect($ldap_server) or die( "Could not connect!" );
