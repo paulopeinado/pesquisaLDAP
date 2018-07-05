@@ -48,13 +48,13 @@ body {
 <?php 
 
 // Log de acessos
-$data = "DATA: ".date('d/m/Y G:i:s',mktime(date('G'),date('i'),date('s'),date('m'),date('d'),date('Y')))." ";
-$ip = " -----> IP: ".$_SERVER["REMOTE_ADDR"];
-$linha = $data.$ip."\n";
+#$data = "DATA: ".date('d/m/Y G:i:s',mktime(date('G'),date('i'),date('s'),date('m'),date('d'),date('Y')))." ";
+#$ip = " -----> IP: ".$_SERVER["REMOTE_ADDR"];
+#$linha = $data.$ip."\n";
 
-$log = fopen("/var/log/acesso.log", "a");
-$grava = fwrite($log, $linha);
-fclose($log);
+#$log = fopen("/var/log/acesso.log", "a");
+#$grava = fwrite($log, $linha);
+#fclose($log);
 
 include 'connect.php';
 
