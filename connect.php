@@ -8,8 +8,8 @@ $dominio        = "tj.pa.gov.br"; /*Nome Netbios do dominio*/
 date_default_timezone_set('America/Belem');
 
 // Usuario para autenticacao na Base LDAP
-$auth_user      = getenv($user);
-$auth_pass      = getenv($pass);
+$auth_user      = getenv("user");
+$auth_pass      = getenv("pass");
 
 // Base de pesquisa LDAP do Dominio
 #$base_dn = getenv($dn);
