@@ -1,7 +1,7 @@
 <?php
 // Variaveis Globais
 #$ldap_conn      = getenv($conn);
-$ldap_conn      = "ldaps://172.16.0.52:636";
+$ldap_conn      = "172.16.0.52";
 #$dominio        = getenv($dom); /*Nome Netbios do dominio*/
 $dominio        = "tj.pa.gov.br"; /*Nome Netbios do dominio*/
 
@@ -14,9 +14,6 @@ $auth_pass      = getenv("pass");
 // Base de pesquisa LDAP do Dominio
 #$base_dn = getenv($dn);
 $base_dn = "DC=i,DC=tj,DC=pa,DC=gov,DC=br";
-
-echo $auth_user;
-echo $auth_pass;
 
 // Conecta no servidor
 $connect = ldap_connect($ldap_conn) or die( "Could not connect!" );
