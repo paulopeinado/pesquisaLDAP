@@ -206,11 +206,11 @@ if (!($desconectado)) {
    					$hora=$d["hours"]; 
    					$min=$d["minutes"]; 
    					$seg=$d["seconds"]; 
-						if ((mktime($hora,$min,$seg,$mes,$dia+90,$ano)) > time())
-   							echo "SENHA VENCERA: ".date("d/m/Y G:i:s", mktime($hora,$min,$seg,$mes,$dia+90,$ano))."<br>";
+						if ((mktime($hora,$min,$seg,$mes,$dia+180,$ano)) > time())
+   							echo "SENHA VENCERA: ".date("d/m/Y G:i:s", mktime($hora,$min,$seg,$mes,$dia+180,$ano))."<br>";
 						else 
 							if ($entries[$i]["pwdlastset"][0] > 0)
-								echo "<b>******** SENHA VENCIDA - DIA: ".date("d/m/Y G:i:s", mktime($hora,$min,$seg,$mes,$dia+90,$ano))." ********</b><br />";
+								echo "<b>******** SENHA VENCIDA - DIA: ".date("d/m/Y G:i:s", mktime($hora,$min,$seg,$mes,$dia+180,$ano))." ********</b><br />";
 							else
 								echo "<b>******** NECESSÁRIO TROCAR SENHA NO LOGON ********</b><br />";
 				} 
